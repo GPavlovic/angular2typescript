@@ -2,7 +2,8 @@ System.config({
     transpiler: 'typescript',
     // Instructs the TypeScript compiler of SystemJS to preserve decorators metadata in the transpiled
     // code, because Angular relies on annotations to discover and register components
-    typescriptOptions: {emitDecoratorMetadata: true,
+    typescriptOptions: {
+      emitDecoratorMetadata: true,
       target: "ES5",
       module: "commonjs"}, 
     map: {
