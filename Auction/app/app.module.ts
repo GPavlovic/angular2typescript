@@ -13,6 +13,7 @@ import StarsComponent from "./components/stars/stars";
 import {ProductService} from "./services/product-service";
 import HomeComponent from "./components/home/home";
 import ProductDetailComponent from "./components/product-detail/product-detail";
+import { FilterPipe } from "./pipes/filter-pipe";
 
 @NgModule({
     imports:      [ 
@@ -33,7 +34,8 @@ import ProductDetailComponent from "./components/product-detail/product-detail";
         ProductDetailComponent,
         ProductItemComponent,
         SearchComponent,
-        StarsComponent],
+        StarsComponent,
+        FilterPipe],
     providers:    [ 
         ProductService, 
         { provide: LocationStrategy, useClass: HashLocationStrategy} 
